@@ -1,5 +1,7 @@
 .tile {
-  display: inline-flex;
+  display: inline-grid;
+  grid-template-columns: repeat(40, 32px);
+  grid-template-rows: repeat(27, 32px);
   background-color: gray;
 }
 
@@ -15,13 +17,14 @@
 }
 
 .floor {
-  background: url('/tiles/wood_tiles.png');
+  background: url('/tiles/wood_tiles.png') -32px 0px;
   /* background-color: gray; */
   /* background-image: url('/tiles/cave.png') */
 }
 
 .npc {
   background-image: url('/tiles/log.png');
+  z-index: -1;
 }
 
 .fog {
