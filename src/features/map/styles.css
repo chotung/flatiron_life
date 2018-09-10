@@ -1,0 +1,22 @@
+.tile {
+  display: inline-flex;
+  background-color: gray;
+}
+
+.keycard {
+  background-color: gray;
+}
+
+.tree {
+  background-image: url('/tiles/chest.png');
+
+}
+
+.floor {
+  background-color: gray;
+  /* background-image: url('/tiles/cave.png') */
+}
+
+.npc {
+  background-image: url('/tiles/log.png');
+}
