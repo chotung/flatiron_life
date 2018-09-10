@@ -16,7 +16,6 @@ const mapReducer = (state = open, action) => {
         return tiles
       case 'MAIN_MAP':
         return mainFloor
-        break;
     default:
       return state
   }

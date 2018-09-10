@@ -13,6 +13,8 @@ function getTileSprite(type){
       return 'tree'
     case 7:
         return 'npc'
+    case 11:
+        return 'fog'
     default:
         return null
   }
@@ -50,8 +52,8 @@ function Map (props) {
         position: 'relative',
         top: '0px',
         left: '0px',
-        width: '800px',
-        height: '384px',
+        width: '1280px',
+        height: '864px',
         border: '4px solid white',
     }}>
     {
@@ -62,8 +64,8 @@ function Map (props) {
 }
 
 
-// h320 + 32 + 32 + 32  = 416
-// w640 + (32 * 6)= 800
+//w800
+//h736
 function mapStateToProps(state) {
   return {
     tiles: state.map

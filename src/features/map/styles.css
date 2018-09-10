@@ -4,19 +4,55 @@
 }
 
 .keycard {
-  background-color: gray;
+  /* background-color: gray; */
+  background: url('/tiles/wood_tiles.png');
+
 }
 
 .tree {
-  background-image: url('/tiles/chest.png');
-
+  background: url('/tiles/WORK_stage01.jpg') 64px 0;
+  /* background-repeat: repeat-x; */
 }
 
 .floor {
-  background-color: gray;
+  background: url('/tiles/wood_tiles.png');
+  /* background-color: gray; */
   /* background-image: url('/tiles/cave.png') */
 }
 
 .npc {
   background-image: url('/tiles/log.png');
 }
+
+.fog {
+  background-color: black;
+}
+
+
+/* position: 'absolute',
+top: props.player.position[1], //starting x
+left: props.player.position[0], //starting y
+backgroundImage: `url(${walkSprite})`,
+backgroundPosition: props.player.spriteLocation,
+width: '32px',
+height: '32px', */
+
+
+/* #container{
+width:250px;
+height:250px;
+position:relative;
+border:#000 solid 1px;
+}
+#c3{
+width:100px;
+height:50px;
+border:#000 1px solid;
+top:50px;
+left:50px;
+position:absolute;
+} */
+
+
+
+/* css grid instead of display flex */

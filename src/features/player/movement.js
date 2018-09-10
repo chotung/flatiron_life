@@ -76,7 +76,8 @@ import { SPRITE_SIZE, MAP_WIDTH, MAP_HEIGHT } from '../../config/constants'
   export const makeInteraction = (position, direction, map) => {
     const newPos = getNewPosition(position, direction)
     const tileCheck = observeImpassable(newPos, map)
-      if (observeImpassable(newPos, map) === 7 && direction === "WEST") {
+      if (observeImpassable(newPos, map) === 7 ) {
+        // && direction === "WEST"
           return 7
           // should change the state of event so it will render a different event
       } else if (tileCheck === 6) {

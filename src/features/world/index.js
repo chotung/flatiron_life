@@ -3,7 +3,7 @@ import Player from '../player'
 import { makeInteraction, observeImpassable } from '../player/movement'
 import Map from '../map'
 import { connect } from 'react-redux'
-import { dispatchDirection, dispatchInteraction, dispatchReset, dispatchEntrance } from '../../config/actions'
+import { dispatchDirection, dispatchInteraction, dispatchReset, dispatchEntrance, dispatchMain } from '../../config/actions'
 import Textbox from '../../features/textbox'
 
 // import Progressbar from '../../features/textbox/progressbar'
@@ -42,6 +42,9 @@ class World extends Component {
           // console.log(this.props.event.tileType);
           return dispatchEntrance()
         }
+        else if (event === 7) {
+          return dispatchMain()
+        }
         // }
       // case 32:
         // if (makeInteraction(pos, dir, map) === 10)
@@ -60,8 +63,8 @@ render(){
         tabIndex='0'
         style={{
           position: 'relative',
-          width: '800px',
-          height: '400px',
+          width: '1280px',
+          height: '864px',
           margin: '20px auto',
         }}>
         <Map />
