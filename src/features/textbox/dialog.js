@@ -26,4 +26,4 @@ export const draws = "Bunch of drawers filled with stuff."
 
 export const toilet = "Toilet...I think you're old enough to know how to use it."
 export const noEnter = "DO NOT ENTER!"
-export const dark = "Good Soul there is no entry into these parts..."
+export const dark = "Good Soul you tried but have failed miserably... At least Michelle is still there for you in the Abyss"

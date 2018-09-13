@@ -28,7 +28,7 @@ const mapReducer = (state = initialState, action) => {
       case 'MOD_TWO':
         return {
           tiles: mod2,
-          immovableObjects: moduleOneObjects
+          immovableObjects: [{}]
         }
     default:
       return state

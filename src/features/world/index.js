@@ -47,7 +47,7 @@ class World extends Component {
           return dispatchMain()
         }
         else if (event === 17) {
-          // return dispatchMod2()
+          return dispatchMod2()
         }
         break;
         // }
