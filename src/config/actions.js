@@ -12,6 +12,7 @@ const UPDATE_EVENT = "UPDATE_EVENT"
 const RESET_EVENT = "RESET_EVENT"
 const UPDATE_MAP = "UPDATE_MAP"
 const MAIN_MAP = "MAIN_MAP"
+const MOD_TWO = "MOD_TWO"
 
 export const dispatchDirection = (direction, map) => {
   store.dispatch({
@@ -55,5 +56,11 @@ export const dispatchMain = () => {
   // console.log("dispatch new map");
   store.dispatch ({
     type: MAIN_MAP
+  })
+}
+
+export const dispatchMod2 = () => {
+  store.dispatch ({
+    type: MOD_TWO
   })
 }

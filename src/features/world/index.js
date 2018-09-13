@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Player from '../player'
-import { makeInteraction, observeImpassable } from '../player/movement'
+// import { makeInteraction, observeImpassable } from '../player/movement'
 import Map from '../map'
 import { connect } from 'react-redux'
-import { dispatchDirection, dispatchInteraction, dispatchReset, dispatchEntrance, dispatchMain } from '../../config/actions'
+import { dispatchDirection, dispatchInteraction, dispatchReset, dispatchEntrance, dispatchMain, dispatchMod2 } from '../../config/actions'
 import Textbox from '../../features/textbox'
-
+import Instruction from '../../features/instruction'
+// import WIP from '../world'
 // import Progressbar from '../../features/textbox/progressbar'
 
 
@@ -13,7 +14,7 @@ class World extends Component {
 
 
   handleKeyDown = (e) => {
-    const { position } = this.props.player
+    // const { position } = this.props.player
     // console.log(this.props.map);
     // console.log(position[0] /32);
     // console.log(position[1] /32);
@@ -45,6 +46,10 @@ class World extends Component {
         else if (event === 7) {
           return dispatchMain()
         }
+        else if (event === 17) {
+          // return dispatchMod2()
+        }
+        break;
         // }
       // case 32:
         // if (makeInteraction(pos, dir, map) === 10)
@@ -70,6 +75,7 @@ render(){
         <Map />
         <Player />
         <Textbox />
+        <Instruction />
       </div>
     )
   }
@@ -78,7 +84,7 @@ render(){
 const mapStateToProps = state => {
   return {
     player: state.player,
-    map: state.map,
+    map: state.map.tiles,
     event: state.event
   }
 }

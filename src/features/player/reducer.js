@@ -5,7 +5,7 @@
 import { newPosition, getWalkIndex, getSpriteLocation, makeInteraction } from './movement.js'
 
 const initialState = {
-  position: [800, 832],
+  position: [864, 832],
   spriteLocation: '-32px 0px',
   direction: 'SOUTH',
   walkIndex: 0,

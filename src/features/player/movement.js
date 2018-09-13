@@ -84,6 +84,32 @@ import { SPRITE_SIZE, MAP_WIDTH, MAP_HEIGHT } from '../../config/constants'
         return 6
       }else if (tileCheck === 5) {
         return 5
+      }else if (tileCheck === 8) {
+        return 8
+      }else if (tileCheck === 9) {
+        return 9
+      }else if (tileCheck === 10) {
+        return 10
+      }else if (tileCheck === 11) {
+        return 11
+      }else if (tileCheck === 12) {
+        return 12
+      }else if (tileCheck === 13) {
+        return 13
+      }else if (tileCheck === 14) {
+        return 14
+      }else if (tileCheck === 15) {
+        return 15
+      }else if (tileCheck === 16) {
+        return 16
+      }else if (tileCheck === 17) {
+        return 17
+      }else if (tileCheck === 18) {
+        return 18
+      }else if (tileCheck === 19) {
+        return 19
+      }else if (tileCheck === 20) {
+        return 20
       }
 
   }

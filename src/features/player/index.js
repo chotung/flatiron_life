@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import walkSprite from './player_walk.png'
+import walkSprite from './Richard.png'
 // import handleMovement from './movement'
 // import store from '../../config/store'
 // import { getNewPosition } from '../../config/actions'

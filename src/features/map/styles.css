@@ -1,3 +1,4 @@
+
 .tile {
   display: inline-grid;
   grid-template-columns: repeat(40, 32px);
@@ -7,12 +8,20 @@
 
 .keycard {
   /* background-color: gray; */
-  background: url('/tiles/wood_tiles.png');
-
+  background: url('/tiles/wood_tiles.png') -32px 0px;
+}
+.entrance {
+  background-color: gray;
+/* background-color: orange; */
+  /* background: url('/tiles/doors.png') -18px -275px; */
 }
 
-.tree {
-  background: url('/tiles/WORK_stage01.jpg') 64px 0;
+.bathTiles {
+  background: url('/tiles/wood_tiles.png') 0px -96px;
+}
+
+.wall {
+  background: url('/tiles/inner.png') -95.61px -98px;
   /* background-repeat: repeat-x; */
 }
 
@@ -21,14 +30,97 @@
   /* background-color: gray; */
   /* background-image: url('/tiles/cave.png') */
 }
+.unfloor {
+  background: url('/tiles/wood_tiles.png') -32px 0px;
+  /* background-color: gray; */
+  /* background-image: url('/tiles/cave.png') */
+}
 
-.npc {
-  background-image: url('/tiles/log.png');
-  z-index: -1;
+.rug {
+  background: url('/tiles/rug.png') -1080px -871px;
 }
 
 .fog {
   background-color: black;
+}
+
+.sink {
+  background: url('/tiles/kitchen.png') -225px 158px ;
+}
+
+.counter{
+  background: url('/tiles/kitchen.png') -259px 158px;
+}
+
+.fridge {
+  background: url('/tiles/kitchen.png') -386px 161px;
+}
+
+.michelle {
+  position: absolute;
+  background: url('/tiles/spritify2-character.png');
+}
+
+.prince {
+  position: absolute;
+  background: url('/tiles/corgi.png') -54.8px -208px;
+}
+
+.bench1, .bench2, .bench3 {
+  position: absolute;
+  background: url('/tiles/bench.png') 10px -64px;
+}
+
+.table1, .table2, .table3, .table4 {
+  position: absolute;
+  background: url('/tiles/Overworld.png') -568px -168px;
+}
+
+.log {
+  position: absolute;
+  background: url('/tiles/log.png');
+}
+.gem {
+  background-color: red;
+  background: url('/tiles/ruby_gem.png') -280px  -90px;
+}
+
+.coffee {
+  background: url('/tiles/kitchen.png') -418px 161px;
+}
+
+/* .workTable1, .workTable2, .workTable3, .workTable4, .workTable5, .workTable6, .workTable7
+{
+  position: absolute;
+  background: url('/tiles/inner.png') -160px -20px;
+}
+.workTable21, .workTable22, .workTable23, .workTable24, .workTable25, .workTable26, .workTable27
+{
+  position: absolute;
+  background: url('/tiles/inner.png') -160px -20px;
+} */
+
+.table {
+  background: url('/tiles/inner.png') -162px -20px;
+}
+
+.cabinet1, .cabinet2, .cabinet3, .cabinet4 {
+  position: absolute;
+  background: url('/tiles/cabinet.png')-3.48px -32px;
+}
+
+.toilet {
+  background: url('/tiles/kitchen.png') -673px 384px
+  /* background: url('/tiles/do_not_enter.png'); */
+}
+
+.noEnter {
+  position: absolute;
+  background: url('/tiles/do_not_enter.png');
+}
+
+.unwall {
+  background: url('/tiles/inner.png') -95.61px -98px;
 }
 
 
