@@ -48,6 +48,14 @@ function getTileSprite(type){
       return 'toilet'
     case 20:
       return 'noEnter'
+    case 21:
+      return 'prince2'
+    case 22:
+      return 'greenGem'
+    case 23:
+      return 'fedoraTiles'
+    case 24:
+      return 'railsTile'
     default:
         return null
   }

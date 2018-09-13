@@ -27,8 +27,6 @@
 
 .floor {
   background: url('/tiles/wood_tiles.png') -32px 0px;
-  /* background-color: gray; */
-  /* background-image: url('/tiles/cave.png') */
 }
 .unfloor {
   background: url('/tiles/wood_tiles.png') -32px 0px;
@@ -61,7 +59,7 @@
   background: url('/tiles/spritify2-character.png');
 }
 
-.prince {
+.prince, .prince2 {
   position: absolute;
   background: url('/tiles/corgi.png') -54.8px -208px;
 }
@@ -79,6 +77,9 @@
 .log {
   position: absolute;
   background: url('/tiles/log.png');
+}
+.greenGem {
+  background: url('/tiles/greenRock.png')-64px -32px;
 }
 .gem {
   background-color: red;
@@ -123,7 +124,21 @@
   background: url('/tiles/inner.png') -95.61px -98px;
 }
 
+.fedoraTiles {
+  background: url('/tiles/rug.png') -1080px -871px;
+}
+.fedora {
+  position: absolute;
+  background: url('/tiles/fedora.png') -128px 0px;
+}
 
+.railsTile {
+  background: url('/tiles/rug.png') -1080px -871px;
+}
+.rails {
+  position: absolute;
+  background: url('/tiles/train.png') -425px -240px;
+}
 /* position: 'absolute',
 top: props.player.position[1], //starting x
 left: props.player.position[0], //starting y

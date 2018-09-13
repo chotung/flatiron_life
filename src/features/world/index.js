@@ -3,10 +3,10 @@ import Player from '../player'
 // import { makeInteraction, observeImpassable } from '../player/movement'
 import Map from '../map'
 import { connect } from 'react-redux'
-import { dispatchDirection, dispatchInteraction, dispatchReset, dispatchEntrance, dispatchMain, dispatchMod2 } from '../../config/actions'
+import { dispatchDirection, dispatchInteraction, dispatchReset, dispatchEntrance, dispatchMain, dispatchMod2,dispatchEnd } from '../../config/actions'
 import Textbox from '../../features/textbox'
 import Instruction from '../../features/instruction'
-// import WIP from '../world'
+// import BGM from './bgm'
 // import Progressbar from '../../features/textbox/progressbar'
 
 
@@ -49,6 +49,9 @@ class World extends Component {
         else if (event === 17) {
           return dispatchMod2()
         }
+        else if (event === 24) {
+          return dispatchEnd()
+        }
         break;
         // }
       // case 32:
@@ -72,6 +75,7 @@ render(){
           height: '864px',
           margin: '20px auto',
         }}>
+
         <Map />
         <Player />
         <Textbox />
@@ -80,6 +84,7 @@ render(){
     )
   }
 }
+
 
 const mapStateToProps = state => {
   return {

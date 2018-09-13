@@ -18,6 +18,8 @@ export const prince = "Welcome to the world of web development! You're going to 
 
 export const ruby = "Congratulations! You learned Ruby, you moved on to the next one!"
 
+export const greenGem = "Congratulations! You picked...Kryptonite! Good thing you aren't Superman or the rating on this game would have to go up a few."
+
 export const table = "This is a table...I'm sure you've seen this before somewhere...let's learn code!"
 
 export const innerTable = "This is a table...I'm sure you've seen this before somewhere...let's learn code!"
@@ -25,5 +27,13 @@ export const innerTable = "This is a table...I'm sure you've seen this before so
 export const draws = "Bunch of drawers filled with stuff."
 
 export const toilet = "Toilet...I think you're old enough to know how to use it."
+
 export const noEnter = "DO NOT ENTER!"
+
 export const dark = "Good Soul you tried but have failed miserably... At least Michelle is still there for you in the Abyss"
+
+export const prince2 = "Welcome to the internet! Good job mastering Ruby! Going on the web is exciting can you do it? If I catch you rails g scaffold it'll be the end"
+
+export const fedora = "This is Frank Sinatra here! Ya ready to learn some RESTFUL routes and CRUD actions kid?"
+
+export const rails = "All aboard the Ruby on Rails express!!"

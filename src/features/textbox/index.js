@@ -3,7 +3,7 @@
 import React from 'react'
 import './rpgui.css'
 import { connect } from 'react-redux'
-import { dialog1, chest, fridge, sink, counter, michelle, keycard, coffee, prince, ruby, table, innerTable, draws, toilet, noEnter, dark} from './dialog'
+import { dialog1, chest, fridge, sink, counter, michelle, keycard, coffee, prince, ruby, table, innerTable, draws, toilet, noEnter, dark, prince2, greenGem, fedora, rails} from './dialog'
 // import { dispatchNewMap } from '../../config/actions'
 
 
@@ -47,6 +47,14 @@ import { dialog1, chest, fridge, sink, counter, michelle, keycard, coffee, princ
       return toilet
     case 20:
       return noEnter
+    case 21:
+      return prince2
+    case 22:
+      return greenGem
+    case 23:
+      return fedora
+    case 24:
+      return rails
     default:
 
    }

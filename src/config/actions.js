@@ -64,3 +64,9 @@ export const dispatchMod2 = () => {
     type: MOD_TWO
   })
 }
+
+export const dispatchEnd = () => [
+  store.dispatch ({
+    type: "END"
+  })
+]

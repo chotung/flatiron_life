@@ -1,7 +1,7 @@
 //dealing with the state that the player component needs
 //reducers map state to props to the component
 // props. some keys
-import { tiles, open, mainFloor, mod2, openObjects, tilesObject, moduleOneObjects, } from '../../data/maps/1'
+import { tiles, open, mainFloor, mod2, openObjects, tilesObject, moduleOneObjects, moduleTwoObjects, end, endObjects } from '../../data/maps/1'
 const initialState = {
   tiles: open,
   immovableObjects: openObjects,
@@ -28,7 +28,12 @@ const mapReducer = (state = initialState, action) => {
       case 'MOD_TWO':
         return {
           tiles: mod2,
-          immovableObjects: [{}]
+          immovableObjects: moduleTwoObjects
+        }
+      case 'END':
+        return {
+          tiles: end,
+          immovableObjects: endObjects
         }
     default:
       return state
