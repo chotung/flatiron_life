@@ -7,12 +7,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <audio className='music'  autoPlay controls loop >
+        <div className='music'>
+        <audio autoPlay controls loop >
           <source
             type="audio/mpeg"
-            src="./Never Gonna Give You Up Original.mp3">
+            src="./Far-Away-Places-Call.mp3">
           </source>
         </audio>
+        </div>
         <World />
       </div>
     )
@@ -20,6 +22,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-//dispatchTiles
