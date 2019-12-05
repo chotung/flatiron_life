@@ -71,9 +71,11 @@ render(){
         tabIndex='0'
         style={{
           position: 'relative',
-          width: '1280px',
-          height: '864px',
-          margin: '20px auto',
+          width: '80rem',
+          height: '54rem',
+          // width: '1280px',
+          // height: '864px',
+          margin: '-75px 0px -100px 150px',
         }}>
 
         <Map />

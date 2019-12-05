@@ -7,16 +7,12 @@ const Instruction = () => {
       <div className="rpgui-container framed-golden"
         style={{
           color:"white",
-          
+          textAlign: "center",
+          wordWrap: "break-word",
+          height: "50%",
+          maxWidth: "11%"
         }}>
         Arrow Keys to move
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         Z to interact
       </div>
     </div>
