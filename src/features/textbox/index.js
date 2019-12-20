@@ -60,6 +60,12 @@ import { dialog1, chest, fridge, sink, counter, michelle, keycard, coffee, princ
    }
  }
 
+const styles = {
+  width: "11%",
+  height: "50%",
+  wordBreak: "break-word",
+  fontSize: "6px",
+};
 
 
 
@@ -68,7 +74,9 @@ const Textbox = (props) => {
  // props.player is the state of the player
   return (
     <div className="rpgui-content">
-      <div className="rpgui-container framed-golden-2">
+      <div 
+        className="rpgui-container framed-golden-2" 
+        style={styles}>
         {events(props)}
       </div>
     </div>
